@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<title>Fox and Friends Hunt</title>
+<link rel="stylesheet" href="FOXstyle.css">
+</head>
+
+<body class="forest">
+
+<div class="menu">
+
+<h1>🦊 Fox and Friends Hunt</h1>
+
+<div class="menu-box">
+
+<label>Modo de jogo</label>
+<select id="mode">
+<option value="slow">Lento</option>
+<option value="fast">Rápido</option>
+<option value="zen">Zen</option>
+</select>
+
+<label>Qual Animal</label>
+<select id="foxStyle">
+<option value="forest">Raposa</option>
+<option value="arctic">Coruja</option>
+<option value="desert">Caranguejo</option>
+<option value="dark">Morcego</option>
+</select>
+
+<button onclick="startGame()">Jogar</button>
+
+</div>
+
+<div class="scoreBox">
+
+<div id="score">Pontuação: 0</div>
+<div id="bestScore">Recorde: 0</div>
+
+</div>
+
+</div>
+
+<canvas id="game" width="400" height="400"></canvas>
+
+<audio id="eatSound" src="assets/eat.m4a"></audio>
+<audio id="hitSound" src="assets/hit.mp3"></audio>
+
+<script src="FOXscript.js"></script>
+
+</body>
+</html>
